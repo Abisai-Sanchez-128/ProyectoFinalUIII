@@ -151,53 +151,55 @@ class _HomeWidgetState extends State<HomeWidget> {
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(4, 4, 4, 4),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
-                                child: InkWell(
-                                  onTap: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            LoginUsuarioWidget(),
-                                      ),
-                                    );
-                                  },
-                                  child: Icon(
-                                    Icons.person,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
-                                    size: 44,
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 0, 4),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              LoginUsuarioWidget(),
+                                        ),
+                                      );
+                                    },
+                                    child: Icon(
+                                      Icons.person,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
+                                      size: 44,
+                                    ),
                                   ),
                                 ),
-                              ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
-                                child: InkWell(
-                                  onTap: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            LoginUsuarioWidget(),
-                                      ),
-                                    );
-                                  },
-                                  child: Text(
-                                    'Seccion de \nclientes',
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText2,
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 4, 0, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              LoginUsuarioWidget(),
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      'Seccion de \nclientes',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText2,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -221,53 +223,55 @@ class _HomeWidgetState extends State<HomeWidget> {
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(4, 4, 4, 4),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
-                                child: InkWell(
-                                  onTap: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            Empleado6camposWidget(),
-                                      ),
-                                    );
-                                  },
-                                  child: Icon(
-                                    Icons.group,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
-                                    size: 44,
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 0, 4),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              Empleado6camposWidget(),
+                                        ),
+                                      );
+                                    },
+                                    child: Icon(
+                                      Icons.group,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
+                                      size: 44,
+                                    ),
                                   ),
                                 ),
-                              ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
-                                child: InkWell(
-                                  onTap: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            Empleado6camposWidget(),
-                                      ),
-                                    );
-                                  },
-                                  child: Text(
-                                    'Seccion de empleados',
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText2,
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 4, 0, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              Empleado6camposWidget(),
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      'Seccion de empleados',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText2,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -291,53 +295,55 @@ class _HomeWidgetState extends State<HomeWidget> {
                         ),
                         child: Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(4, 4, 4, 4),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
-                                child: InkWell(
-                                  onTap: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            DatosDesarrolladorWidget(),
-                                      ),
-                                    );
-                                  },
-                                  child: Icon(
-                                    Icons.adb,
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
-                                    size: 44,
+                          child: SingleChildScrollView(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 0, 0, 4),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              DatosDesarrolladorWidget(),
+                                        ),
+                                      );
+                                    },
+                                    child: Icon(
+                                      Icons.adb,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryText,
+                                      size: 44,
+                                    ),
                                   ),
                                 ),
-                              ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
-                                child: InkWell(
-                                  onTap: () async {
-                                    await Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            DatosDesarrolladorWidget(),
-                                      ),
-                                    );
-                                  },
-                                  child: Text(
-                                    'Info. del desarrollador',
-                                    style:
-                                        FlutterFlowTheme.of(context).bodyText2,
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 4, 0, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              DatosDesarrolladorWidget(),
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      'Info. del desarrollador',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyText2,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
