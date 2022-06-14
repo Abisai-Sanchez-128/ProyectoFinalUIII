@@ -347,35 +347,44 @@ class _HomeWidgetState extends State<HomeWidget> {
               ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16, 4, 16, 0),
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 4, 0, 4),
-                      child: Text(
-                        'Ofertas del dia',
-                        style: FlutterFlowTheme.of(context).subtitle2.override(
-                              fontFamily: 'Poppins',
-                              color: FlutterFlowTheme.of(context).secondaryText,
-                            ),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(1, 4, 0, 4),
+                        child: Text(
+                          'Ofertas del dia',
+                          style: FlutterFlowTheme.of(context)
+                              .subtitle2
+                              .override(
+                                fontFamily: 'Poppins',
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                              ),
+                        ),
                       ),
-                    ),
-                    InkWell(
-                      onTap: () async {
-                        await Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => GridviewWidget(),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(70, 0, 0, 0),
+                        child: InkWell(
+                          onTap: () async {
+                            await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => GridviewWidget(),
+                              ),
+                            );
+                          },
+                          child: Text(
+                            'Mostrar mas articulos',
+                            style: FlutterFlowTheme.of(context).bodyText1,
                           ),
-                        );
-                      },
-                      child: Text(
-                        'Mostrar mas articulos',
-                        style: FlutterFlowTheme.of(context).bodyText1,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               Padding(
